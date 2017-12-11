@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <!-- app_bar_main -->
+    <!-- app_bar_main -->
+    <!-- app_bar_main -->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.h3xis9.app_aicar.MainActivity">
+
+        <!--
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:background="@color/ai_red">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        -->
+
+
+        <!-- content_main -->
+        <!-- content_main -->
+        <!-- content_main -->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.example.h3xis9.app_aicar.MainActivity">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#000000"
+                tools:context="com.example.h3xis9.app_aicar.MainActivity">
+
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+                <com.hanks.htextview.scale.ScaleTextView
+                    android:id="@+id/textview1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="right|bottom"
+                    android:background="#000"
+                    android:textColor="@color/ai_white"
+                    android:textSize="26dp"
+                    />
+
+                <com.hanks.htextview.scale.ScaleTextView
+                    android:id="@+id/textview2"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="right|top"
+                    android:textColor="@color/ai_white"
+                    android:textSize="26dp"
+                    />
+
+                <ImageView
+                    android:layout_weight="12"
+                    android:id="@+id/voiceRec"
+                    android:contentDescription="VoiceRecognition"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+
+            </LinearLayout>
+
+
+            <!-- CONTENTS AREA -->
+            <!-- CONTENTS AREA -->
+            <!-- CONTENTS AREA -->
+            <!-- CONTENTS AREA -->
+            <!-- CONTENTS AREA -->
+            <!-- CONTENTS AREA -->
+
+        </android.support.constraint.ConstraintLayout>
+        <!-- content_main END -->
+        <!-- content_main END -->
+        <!-- content_main END -->
+
+
+    </android.support.design.widget.CoordinatorLayout>
+    <!-- app_bar_main end -->
+    <!-- app_bar_main end -->
+    <!-- app_bar_main end -->
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" >
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

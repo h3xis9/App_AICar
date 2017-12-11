@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_radius"
+        >
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="40dp"
+            android:paddingLeft="100dp"
+            android:background="@null"
+            android:textColor="@color/ai_white"
+            android:text="自動走行開始"
+            android:layout_toEndOf="@+id/map"/>
+
+        <ImageView
+            android:id="@+id/iv_aichan"
+            android:layout_weight="2"
+            android:src="@drawable/aichan_circle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_marginRight="80dp"
+            android:layout_toEndOf="@+id/map"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
